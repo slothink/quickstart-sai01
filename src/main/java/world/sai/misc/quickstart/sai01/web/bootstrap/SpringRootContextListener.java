@@ -14,6 +14,6 @@ public class SpringRootContextListener extends AbstractAnnotationConfigDispatche
     protected Class<?>[] getServletConfigClasses()  { return new Class[] {WebConfig.class};}
 
     protected String[] getServletMappings() {
-        return new String[] {"*.do"};
+        return new String[] {"*.do", "/"};
     }
 }

@@ -62,7 +62,7 @@ flyway {
     password = 'asdf1234'
 }
 
-task createDatabaseUser << {
+task makeCreateDatabaseUserSql << {
     println "CREATE DATABASE misc_sai_01 CHARACTER SET utf8 COLLATE utf8_general_ci;\n" +
             "CREATE USER 'misc_sai_01'@'localhost' IDENTIFIED BY 'asdf1234';\n" +
             "CREATE USER 'misc_sai_01'@'%' IDENTIFIED BY 'asdf1234';\n" +
